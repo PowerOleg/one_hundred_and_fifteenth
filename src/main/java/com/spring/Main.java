@@ -12,7 +12,7 @@ public class Main {
         SimpleBeanWithinInterface simpleBean3 = getBean("simpleBean3", ctx);
         ctx.close();
     }
-    
+
     private static SimpleBeanWithinInterface getBean(String beanName, ApplicationContext ctx) {         //1 для первого варианта изменить на SimpleBean
         try {
             SimpleBeanWithinInterface bean = (SimpleBeanWithinInterface) ctx.getBean(beanName);
